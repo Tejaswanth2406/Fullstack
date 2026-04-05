@@ -24,7 +24,7 @@ It is a simple React application that displays course information and exercises.
 
 ---
 
-##  Component Structure
+##  Component Structure:
 
 ```id="1u5azj"
 App
