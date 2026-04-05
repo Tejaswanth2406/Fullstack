@@ -65,7 +65,7 @@ npm run dev
 
 ---
 
-## 📚 What I Learned
+##  What I Learned
 
 * Creating and using React components
 * Passing data using props
