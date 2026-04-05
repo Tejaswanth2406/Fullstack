@@ -1,16 +1,87 @@
-# React + Vite
+# Course Information App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is part of the **Full Stack Open – Part 2 (Exercises 2.1–2.5)**.
 
-Currently, two official plugins are available:
+It is a simple React application that displays course information and exercises.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+##  Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Displays course name
+* Lists all course parts dynamically
+* Shows number of exercises for each part
+* Calculates total number of exercises using `reduce()`
+* Supports multiple courses
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Technologies Used
+
+* React
+* JavaScript (ES6+)
+* Vite
+
+---
+
+##  Component Structure
+
+```id="1u5azj"
+App
+ └── Course
+      ├── Header
+      ├── Content
+      │    └── Part
+      └── Total
+```
+
+---
+
+##  How to Run the Project
+
+1. Clone the repository:
+
+```bash id="l4b8cz"
+git clone https://github.com/Tejaswanth2406/Fullstack.git
+```
+
+2. Navigate to the project folder:
+
+```bash id="b9s8lt"
+cd part2/courseinfo
+```
+
+3. Install dependencies:
+
+```bash id="41u7i6"
+npm install
+```
+
+4. Start the development server:
+
+```bash id="0i8x3h"
+npm run dev
+```
+
+---
+
+## 📚 What I Learned
+
+* Creating and using React components
+* Passing data using props
+* Rendering lists with `map()`
+* Calculating values using `reduce()`
+* Structuring a React application into smaller components
+
+---
+
+##  Notes
+
+* The application works dynamically regardless of the number of course parts
+* No hardcoded components are used for rendering parts
+
+---
+
+##  Author
+
+* GitHub: https://github.com/Tejaswanth2406
