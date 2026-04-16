@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonebook</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card">
+        <h1>Phonebook</h1>
+        <p id="notification" class="notification hidden" role="status" aria-live="polite"></p>
+
+        <label class="field">
+          <span>filter shown with</span>
+          <input id="filter" type="text" placeholder="Search by name" />
+        </label>
+
+        <h2>add a new</h2>
+        <form id="person-form" class="form">
+          <label class="field">
+            <span>name</span>
+            <input id="name" type="text" required minlength="3" />
+          </label>
+
+          <label class="field">
+            <span>number</span>
+            <input id="number" type="text" required placeholder="09-1234567" />
+          </label>
+
+          <button type="submit">save</button>
+        </form>
+
+        <h2>Numbers</h2>
+        <p class="muted">The list below is loaded from the backend API.</p>
+        <ul id="persons" class="persons"></ul>
+      </section>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+  </html>
